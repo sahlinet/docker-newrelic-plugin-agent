@@ -14,6 +14,8 @@ RUN mkdir /var/run/newrelic
 RUN apt-get install -y libpq-dev python-dev
 
 RUN pip install newrelic-plugin-agent[postgresql]
+RUN pip install newrelic-plugin-agent[rabbitmq]
+RUN pip install newrelic-plugin-agent[nginx]
 RUN pip install j2cli
 RUN apt-get install -y moreutils
 
