@@ -35,3 +35,7 @@ thus on Tutum:
 `-e DB_USERNAME=myuser`
 `-e DB_PASSWORD=asdf`
 `-e DB_DATABASE=mydb`
+
+RabbitMQ
+--------
+Link to a container named `queue` running the image `tutum/rabbitmq`.
