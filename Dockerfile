@@ -5,10 +5,9 @@ RUN apt-get update
 RUN apt-get install -y --fix-missing python-pip
 RUN pip install newrelic-plugin-agent
 
-ADD newrelic-plugin-agent.cfg /etc/newrelic/newrelic-plugin-agent.cfg
+ADD newrelic-plugin-agent.tmpl /etc/newrelic/newrelic-plugin-agent.tmpl
 
 RUN mkdir -p /var/log/newrelic
-#RUN chmod newrelic:newrelic /var/log/newrelic
 RUN mkdir /var/run/newrelic
 
 RUN apt-get install -y libpq-dev python-dev

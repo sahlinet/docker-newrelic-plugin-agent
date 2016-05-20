@@ -2,7 +2,7 @@
 
 # newrelic plugin
 if [ ! -z "$NEWRELIC_LICENSE" ]; then
-        j2 /etc/newrelic/newrelic-plugin-agent.cfg | sponge /etc/newrelic/newrelic-plugin-agent.cfg
+        j2 /etc/newrelic/newrelic-plugin-agent.tmpl | sponge /etc/newrelic/newrelic-plugin-agent.cfg
 	echo "******** File newrelic-plugin-agent.cfg rendered START ***********"
         cat /etc/newrelic/newrelic-plugin-agent.cfg
 	echo "******** File newrelic-plugin-agent.cfg rendered END ***********"
