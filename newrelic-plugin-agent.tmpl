@@ -16,7 +16,7 @@ Application:
       superuser: False
   {% endif %}
 
-  {% if "QUEUE_PORT_5672_TCP_ADDR" is defined %}
+  {% if QUEUE_PORT_5672_TCP_ADDR is defined %}
   rabbitmq:
     - name: rabbitmq@{{ QUEUE_PORT_15672_TCP_ADDR }}
       host: {{ QUEUE_PORT_15672_TCP_ADDR }} 
@@ -27,7 +27,7 @@ Application:
       api_path: /api
   {% endif %}
 
-  {% if "CACHE_PORT_6379_TCP_ADDR" is defined %}
+  {% if CACHE_PORT_6379_TCP_ADDR is defined %}
   redis:
     - name: {{ CACHE_PORT_6379_TCP_ADDR }}
       host: {{ CACHE_PORT_6379_TCP_ADDR }}
