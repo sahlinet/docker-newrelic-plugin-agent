@@ -25,7 +25,7 @@ thus on Docker:
 thus on Tutum:
 
 `tutum service run --link=db:db -e MODE=docker-postgresql-test -e NEWRELIC_LICENSE=asdfasdfasdfasdfasdfsaf philipsahli/newrelic-plugin-agent`
-`tutum service run --link=db:db -e MODE=docker-postgresql-test -e NEWRELIC_LICENSE=bd80f971051885433a13f77eae8db909e0be6e98 philipsahli/newrelic-plugin-agent`
+`tutum service run --link=db:db -e MODE=docker-postgresql-test -e NEWRELIC_LICENSE=asdfasdfasdfasdfasdfsaf philipsahli/newrelic-plugin-agent`
 
 # Foreign PostgreSQL instance
 
