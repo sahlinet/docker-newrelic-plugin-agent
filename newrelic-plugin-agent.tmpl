@@ -6,7 +6,7 @@ Application:
   #newrelic_api_timeout: 10
   #proxy: http://localhost:8080
 
-  {% if MODE == "docker-postgresql-test" %}
+  {% if MODE is defined and MODE == "docker-postgresql-test" %}
   postgresql:
     - host: {{ DB_PORT_5432_TCP_ADDR }}
       port: {{ DB_PORT_5432_TCP_PORT }}
